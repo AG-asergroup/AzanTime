@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+    background: linear-gradient(140deg,#556270,#FF6B6B);
+    background-size: cover;
+}
+input {
+    padding: 10px;
+    border: 0px ;
+    border-radius: 10px;
+}
+header {
+    padding: 2% 5%;
+}
+.moon {
+    width: 70px;
+    height: 70px;
+    /* the moon when the time is in 7pm  => */
+    box-shadow: -15px 6px 0 0 #fff77e;
+    border-radius: 50%;
+    float: left;
+}
+.sun {
+    width: 70px;
+    height: 70px;
+    background-color: #FFCC33;
+    /* the moon when the time is in 7pm  => */
+    /* box-shadow: -15px 6px 0 0 #fff77e; */
+    box-shadow: 0 0 20px 12px #FFCC33;
+    border-radius: 50%;
+    float: right;
+}
+header h1{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    -webkit-text-stroke: .4px black;
+    font-size: 40px;
+    font-family: sans-serif;
+}
+main {
+    width: 100%;
+    height:fit-content;
+    padding: 80px;
+    color: white;
+
+}
+.select {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap ;
+    margin-bottom: 50px;
+}
+.select p {
+    font-size: x-large;
+    padding: 10px 0px;
+    border-bottom: 5px solid;
+    margin-bottom: 20px;
+}
+.write {
+    width: 45%;
+}
+.select input {
+    width: 100%;
+}
+input:focus {
+    outline: none;
+}
+.submit {
+    display: flex;
+    justify-content: center;
+}
+#submit {
+    width: 40%;
+    background-color: black;
+    color: white;
+    cursor:pointer;
+    transition-duration: .3s;
+}
+#submit:hover {
+    background-color: white;
+    color: black;
+}
+#container {
+    margin: 50px 0px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+
+}
+.time {
+    width: fit-content;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    justify-content: space-between;
+    border: .5px dashed;
+    padding: 30px;
+    margin: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+} 
+.time * {
+    background-color: #0000005d;
+    outline: 1px black;
+    -webkit-text-stroke: .8px black;
+}
+#Fajr {
+    background-image: url("https://i.postimg.cc/q7n8kYV4/images.jpg");
+}
+#Sunrise {
+    background-image: url("https://i.postimg.cc/Lsz1d1Ls/images.jpg");
+}
+#Dhuhr{
+    background-image: url("https://i.postimg.cc/ZRb01DJf/images.jpg");
+}
+#Asr {
+    background-image: url("https://i.postimg.cc/fL8kZjLM/19-2024-638698799136192012-619.jpg");
+}
+#Sunset {
+    background-image: url("https://i.postimg.cc/k5cgFFWW/download.jpg");
+}
+#Maghrib {
+    background-image: url("https://i.postimg.cc/L8F9c0Tz/sky-sunset-clouds-silhouette-87500-scaled.jpg");
+}
+#Isha {
+    background-image: url("https://i.postimg.cc/rpFKHPVf/036a37c5053f616b8debfe37544902f3.jpg");
+}
+#Imsak{
+    background-image: url("https://i.postimg.cc/Y2VYWMrM/do-not-eat-drink-sign-600nw-2485815669.webp");
+
+}
+#Midnight {
+    background-image: url("https://i.postimg.cc/qqCtL6J0/moon-1843943-1280.jpg");
+
+}
+footer {
+    padding: 29px ;
+    width: 100%;
+    background-color: #dddd;
+    color: black;
+    text-align: center;
+    position: static;
+    bottom: 1px;
+}
+footer a {
+    color: inherit;
+}
+@media screen and (max-width:602px) {
+    main {
+        padding: 40px;
+    }
+    .select {
+        display: block;
+        width: auto;
+    }
+    .select input {
+        width: 200%;
+    }
+}
