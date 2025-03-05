@@ -1,3 +1,4 @@
+const { default: axios } = require("axios");
 // API =>  https://api.aladhan.com/v1/timingsByAddress/09-03-2015?address=Dubai,UAE&method=8&tune=2,3,4,5,2,3,4,5,-3
 let planet = document.getElementById("planet");
 let clock = new Date().getHours();
