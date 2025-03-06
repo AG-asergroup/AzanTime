@@ -2,8 +2,6 @@
 let planet = document.getElementById("planet");
 let clock = new Date().getHours();
 let header = document.getElementsByTagName("header")[0];
-console.log(header)
-console.log(clock)
 if (clock >= 17 || clock < 8){
 planet.classList.remove('sun');
 planet.classList.add('moon');
