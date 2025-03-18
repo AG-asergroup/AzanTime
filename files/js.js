@@ -2,7 +2,7 @@
 let planet = document.getElementById("planet");
 let clock = new Date().getHours();
 let header = document.getElementsByTagName("header")[0];
-if (clock >= 17 || clock < 8){
+if (clock >= 18 || clock < 8){
 planet.classList.remove('sun');
 planet.classList.add('moon');
 header.style.cssText = `background: linear-gradient(to top,#702963,rgb(0, 0, 0));`;
